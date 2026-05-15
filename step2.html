@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Step 2</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Step 2</h1>
+
+<form action="/result" method="POST">
+
+<input type="hidden" name="step1" value="{{ step1 }}">
+
+<h2>Example</h2>
+<textarea name="step2"></textarea>
+
+<h2>Reason</h2>
+<textarea name="step3"></textarea>
+
+<br>
+
+<button type="submit">Get Result</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
